@@ -67,14 +67,56 @@
                                     <input type="password" name="" id="" class="form-control" required>
                                     <div class="invalid-feedback">
                                         Please Enter Your new password
-                                    </div>
-                                    
-                            <input type="submit" value="submit" class="btn btn-outline-success mt-4">
+                                    </div> <button type="button" class="btn btn-outline-success mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Sign-Up
+                                      </button>
+                            <!-- <input type="submit" value="submit" class="btn btn-outline-success mt-4"> -->
                         </div>
+                           <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign-Up successfully completed</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          You have sucessfully Sign-Up
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, voluptatum. Voluptatibus, modi consequatur sint optio possimus doloribus aliquam illum alias dolore quae. Totam eveniet nobis nam minus ex, tempora officia nostrum magnam autem nihil voluptatum, molestiae quis impedit voluptatibus optio at alias, vero non provident sunt quibusdam? Commodi, at nam!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="save" onclick="save()" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        
                     </form>
             </div>
         </div>
     </div>
+</div>
+                            
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
